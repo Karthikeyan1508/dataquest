@@ -33,7 +33,7 @@ df = df[df['country'].isin(valid_countries)]
 df.drop_duplicates(subset=['user_id'], keep='first', inplace=True)
 
 # 10. Set user_id as the index (acting as the primary key)
-df.set_index('user_id', inplace=True)
+# df.set_index('user_id', inplace=True)
 
 # Save cleaned dataset
 cleaned_file_path = "cleaned_users.csv"
