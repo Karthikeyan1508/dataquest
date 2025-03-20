@@ -26,3 +26,4 @@ SELECT
     GROUP_CONCAT(DISTINCT genre ORDER BY genre ASC SEPARATOR ', ') AS genres
 FROM movies
 GROUP BY movie_id, title, release_year, runtime;
+ORDER BY release_year ASC, runtime ASC, title ASC;
